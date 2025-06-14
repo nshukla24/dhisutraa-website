@@ -112,21 +112,8 @@
         <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">Send Message</button>
       </form>
     </div>
-    <!-- Thank You Message (hidden by default) -->
-    <div id="thanks" class="mt-8 text-green-700 font-semibold text-center hidden">
-      Thank you for your message! We’ll get back to you shortly.
-    </div>
   </section>
 
-  <!-- Script to Show Thank-You Message -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const thankYouMsg = document.getElementById("thanks");
-      if (window.location.hash === "#thanks") {
-        thankYouMsg.classList.remove("hidden");
-        window.scrollTo({ top: thankYouMsg.offsetTop - 100, behavior: "smooth" });
-      }
-    });
 </section>
 
   </section>
