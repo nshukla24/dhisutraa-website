@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DhiSutrra Consulting - AI & Blockchain Experts</title>
     <meta name="description" content="DhiSutrra Consulting: Strategic AI and Blockchain solutions for governments, enterprises, and startups in India and beyond.">
-    <link rel="icon" href="dhisutrra-logo.svg" type="image/svg+xml">
+    <link rel="icon" href="DSC_Logo_SVG.svg" type="image/svg+xml">
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             font-family: 'Montserrat', sans-serif;
             margin: 0;
@@ -15,35 +18,43 @@
             background-color: #f8f9fa;
             color: #333;
             line-height: 1.6;
+            animation: fadeIn 0.5s ease-in; /* Subtle load animation */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
         header {
             background: linear-gradient(to right, #006400, #32CD32);
             color: white;
             text-align: center;
-            padding: 3rem 1rem;
+            padding: 1.5rem 1rem; /* Reduced for compactness */
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
         header img {
             display: block;
-            margin: 0 auto 1.5rem auto;
-            width: 250px; /* Optimized size for prominence */
+            margin: 0 auto 1rem auto;
+            max-width: 200px; /* Smaller, responsive size */
             height: auto;
-            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)); /* Subtle shadow for depth */
-            transition: transform 0.3s ease; /* Smooth hover effect */
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+            transition: transform 0.3s ease;
         }
         header img:hover {
-            transform: scale(1.05); /* Slight zoom on hover for engagement */
+            transform: scale(1.05);
         }
         header h1 {
             margin: 0;
-            font-size: 2.8rem;
+            font-size: 2.2rem; /* Slightly smaller for balance */
             font-weight: 700;
         }
         nav {
             background: #006400;
-            padding: 1rem;
+            padding: 0.75rem;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky; /* Sticks to top on scroll for usability */
+            top: 0;
+            z-index: 1000;
         }
         nav a {
             color: white;
@@ -57,24 +68,26 @@
         }
         main {
             max-width: 1200px;
-            margin: 3rem auto;
+            margin: 2rem auto; /* Reduced top margin for content to appear sooner */
             padding: 0 1.5rem;
         }
         .hero {
             background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
-            padding: 3rem;
+            padding: 2rem;
             border-radius: 12px;
             text-align: center;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e9ecef;
         }
         section {
-            margin-bottom: 3rem;
-            padding: 2rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
             background: white;
             border-radius: 12px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
             transition: box-shadow 0.3s;
+            border: 1px solid #e9ecef;
         }
         section:hover {
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -99,7 +112,7 @@
             display: inline-block;
             background: #32CD32;
             color: white;
-            padding: 1rem 2rem;
+            padding: 0.75rem 1.5rem;
             border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
@@ -119,140 +132,4 @@
             padding: 1rem;
             border: 1px solid #ddd;
             border-radius: 8px;
-            transition: border 0.3s;
-        }
-        input:focus, textarea:focus {
-            border-color: #32CD32;
-        }
-        button {
-            background: #006400;
-            color: white;
-            border: none;
-            padding: 1rem;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: background 0.3s;
-        }
-        button:hover {
-            background: #32CD32;
-        }
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            background: #006400;
-            color: white;
-            margin-top: 3rem;
-            border-top: 4px solid #32CD32;
-        }
-        footer a {
-            color: #32CD32;
-            text-decoration: none;
-            margin: 0 0.5rem;
-        }
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.2rem;
-            }
-            nav a {
-                display: block;
-                margin: 1rem 0;
-            }
-            header img {
-                width: 200px;
-            }
-        }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <header>
-        <img src="DSC_Logo_SVG.svg" alt="DhiSutrra Consulting Logo">
-        <h1>DhiSutrra Consulting</h1>
-    </header>
-    <nav>
-        <a href="#vision">Vision</a>
-        <a href="#mission">Mission</a>
-        <a href="#services">Services</a>
-        <a href="#blogs">Blogs</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <main>
-        <section class="hero">
-            <h1>DhiSutrra Consulting</h1>
-            <p>AI & Blockchain • Strategic Consulting in India and Globally</p>
-            <a href="#contact" class="cta-button">Get Started Today</a>
-        </section>
-        <section>
-            <h2><i class="fas fa-lightbulb"></i> Catalyzing Digital Transformation</h2>
-            <p>Empowering governance, igniting startups, and advancing enterprises through intelligent, ethical technology—from AI to Blockchain and beyond. With over 40% efficiency gains possible via AI (McKinsey), we're here to make it happen.</p>
-        </section>
-        <section id="vision">
-            <h2><i class="fas fa-eye"></i> Our Vision</h2>
-            <p>To reimagine digital consulting by unlocking the true potential of emerging technologies like Blockchain, AI, and IoT—building smarter, inclusive, and purpose-driven solutions that empower governments, businesses, and communities to thrive in a connected future.</p>
-        </section>
-        <section id="mission">
-            <h2><i class="fas fa-rocket"></i> Our Mission</h2>
-            <ul>
-                <li><i class="fas fa-bridge"></i> Bridge emerging technologies with practical, impactful solutions for Government and Enterprise.</li>
-                <li><i class="fas fa-chart-line"></i> Enable inclusive, data-driven innovation in public services and corporate functions, reducing costs by up to 30%.</li>
-                <li><i class="fas fa-seedling"></i> Enable startups in building high-quality, high-impact technology offerings aligned with government and enterprise standards.</li>
-                <li><i class="fas fa-shield-alt"></i> Foster transparent, scalable, and resilient digital ecosystems by combining business acumen with deep technology expertise.</li>
-            </ul>
-        </section>
-        <section id="services">
-            <h2><i class="fas fa-cogs"></i> Core Services</h2>
-            <h3><i class="fas fa-brain"></i> 1. Emerging Tech Consulting</h3>
-            <ul>
-                <li><i class="fas fa-advisor"></i> Enterprise AI & Blockchain Advisory: Advisory and implementation support for strategic adoption in public and private sector programs, ensuring ethical AI practices.</li>
-                <li><i class="fas fa-check-circle"></i> Enterprise AI Governance & Audit: Frameworks for responsible AI integration, compliance, and effectiveness across business units—vital as 85% of AI projects fail without proper governance (Gartner).</li>
-            </ul>
-            <h3><i class="fas fa-users"></i> 2. Government & Enterprise Enablement for Startups</h3>
-            <ul>
-                <li><i class="fas fa-government"></i> Smart Governance & Digital Transformation: Designing and implementing inclusive, citizen-centric solutions at scale.</li>
-                <li><i class="fas fa-project-diagram"></i> Program Management for High-Impact Projects: Driving execution for government and enterprise initiatives with proven methodologies.</li>
-                <li><i class="fas fa-handshake"></i> Startup Enablement & Collaboration Advisory: Helping startups align with government and corporate standards for faster market entry.</li>
-                <li><i class="fas fa-sync"></i> Business-Technology Alignment: Translating emerging tech into practical delivery models.</li>
-                <li><i class="fas fa-arrow-up"></i> Proof of Concept to Scale: Rapid prototyping, validation, and scale-up strategies to turn ideas into reality.</li>
-            </ul>
-            <a href="#contact" class="cta-button">Consult with Our Experts</a>
-        </section>
-        <section id="blogs">
-            <h2><i class="fas fa-blog"></i> Blogs & Insights</h2>
-            <p>Explore thought leadership, case studies, and deep dives into AI, Blockchain, and digital innovation.</p>
-            <ul>
-                <li><i class="fas fa-trend"></i> <strong>Top 5 AI Trends for Enterprises in 2025:</strong> How generative AI is reshaping business—coming soon!</li>
-                <li><i class="fas fa-chain"></i> <strong>Blockchain for Startups: A Scaling Guide:</strong> Real-world strategies for secure growth.</li>
-                <li><i class="fas fa-balance-scale"></i> <strong>Ethical AI in Government:</strong> Balancing innovation with responsibility.</li>
-            </ul>
-            <p>Subscribe for updates!</p>
-        </section>
-        <section id="contact">
-            <h2><i class="fas fa-envelope"></i> Contact Us</h2>
-            <p>Ready to transform your organization? Reach out for a free consultation.</p>
-            <form action="https://formspree.io/f/your-form-id" method="POST"> <!-- Replace with your Formspree endpoint -->
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 DhiSutrra Consulting. All rights reserved. | <a href="mailto:info@dhisutrra.co.in">info@dhisutrra.co.in</a></p>
-        <div>
-            <a href="https://twitter.com/yourhandle"><i class="fab fa-twitter"></i></a>
-            <a href="https://linkedin.com/company/yourcompany"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/nshukla24"><i class="fab fa-github"></i></a>
-        </div>
-    </footer>
-</body>
-</html>
-
+            transition
